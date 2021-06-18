@@ -1,0 +1,32 @@
+// Default button
+@mixin button {
+  text-decoration: none;
+  height: 25px;
+  border-style: solid;
+  cursor: pointer;
+}
+
+// Breakpoints
+@mixin breakpoint($device) {
+  @if $device == mobile-tablet {
+    @media screen and(max-width:768px) {
+      @content;
+    }
+  } @else if $device == laptop {
+    @media screen and(max-width: 1200px) {
+      @content;
+    }
+  }
+}
+
+@mixin minbreakpoint($device) {
+  @if $device==min-laptop {
+    @media screen and(min-width:768px) {
+      @content;
+    }
+  } @else if $device ==min-largescreen {
+    @media screen and(min-width: 1200px) {
+      @content;
+    }
+  }
+}

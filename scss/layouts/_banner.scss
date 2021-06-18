@@ -1,0 +1,14 @@
+.banner {
+  width: 100%;
+  height: 350px;
+  margin-top: 80px;
+  background-image: url(/emprendimiento-web/assets/img/desarrolloweb2021t.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@include breakpoint(mobile-tablet) {
+  .banner {
+    height: 250px;
+  }
+}

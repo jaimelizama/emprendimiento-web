@@ -1,0 +1,46 @@
+.svg-animation-container {
+  height: 400px;
+  width: 100%;
+}
+
+.svg-animation-container svg {
+  margin-top: 2.5rem;
+  height: 300px;
+  width: 80%;
+}
+
+#code {
+  animation: moveHorizontal 2.5s infinite linear;
+}
+
+@keyframes moveHorizontal {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(150px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+#gear,
+#gear-fill {
+  animation: spin 2.5s infinite linear;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg) translateY(0px);
+  }
+  50% {
+    transform: rotate(180deg) translateY(10px);
+  }
+
+  100% {
+    transform: rotate(360deg) translateY(0px);
+  }
+}

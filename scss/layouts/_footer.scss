@@ -1,0 +1,42 @@
+.footer {
+  height: 150px;
+  margin-top: 2%;
+  background: $app-color-secondary2;
+  color: $app-color-primary1;
+  font-family: $app-f-family2;
+  font-size: $app-f-size-medium;
+
+  &__input {
+    height: 20px;
+    border: solid;
+    &:focus {
+      background-color: $app-color-tertiary1;
+    }
+  }
+}
+
+@include breakpoint(laptop) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    line-height: 30px;
+    font-size: $app-f-size-small;
+  }
+}
+
+@include minbreakpoint(min-largescreen) {
+  .footer {
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .footer__links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-basis: 30%;
+  }
+}

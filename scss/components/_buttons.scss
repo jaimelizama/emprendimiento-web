@@ -1,0 +1,10 @@
+.btn {
+  @include button;
+  &--footer {
+    background: $app-color-tertiary1;
+    font-family: $app-f-family2;
+    &:hover {
+      background: $app-color-primary1;
+    }
+  }
+}
