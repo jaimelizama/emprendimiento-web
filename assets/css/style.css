@@ -51,6 +51,7 @@ body {
   text-decoration: none;
   height: 25px;
   border-style: solid;
+  border-radius: 10%;
   cursor: pointer;
 }
 .btn--footer {
@@ -151,6 +152,7 @@ a.active,
 a:hover {
   color: #ffaf6d;
   transition: 0s;
+  cursor: pointer;
 }
 
 .checkbtn {
@@ -322,7 +324,7 @@ a:hover {
   }
 }
 .footer {
-  height: 150px;
+  height: 200px;
   margin-top: 2%;
   background: #060606;
   color: #ffffff;
@@ -346,6 +348,10 @@ a:hover {
     line-height: 30px;
     font-size: 14px;
   }
+
+  .btn--footer {
+    margin-left: 0;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer {
@@ -360,6 +366,10 @@ a:hover {
     justify-content: space-around;
     align-items: center;
     flex-basis: 30%;
+  }
+
+  .btn--footer {
+    margin-left: -25px;
   }
 }
 
