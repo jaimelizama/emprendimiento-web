@@ -37,6 +37,10 @@
       font-family: $app-f-family2;
       color: $app-color-primary1;
       font-weight: $app-fw-bold;
+      &:hover {
+        color: $app-color-tertiary1;
+        transition: 0s;
+      }
     }
   }
 }

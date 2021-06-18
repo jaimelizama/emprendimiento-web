@@ -134,6 +134,10 @@ body {
   color: #ffffff;
   font-weight: 700;
 }
+.navbar .navbar-list .navbar-list__item a:hover {
+  color: #ffaf6d;
+  transition: 0s;
+}
 
 .menu-bars {
   color: #ffffff;
